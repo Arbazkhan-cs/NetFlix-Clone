@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* outline: none; */
     text-decoration: none;
     border: none;
     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
@@ -346,7 +345,7 @@ hr{
     }
 
     .header{
-        height: 50rem;
+        height: 550px;
     }
 }
 
@@ -354,11 +353,13 @@ hr{
     .header-content{
         margin-top: 5rem;
     }
+    .email .btn{
+        left:0;
+    }
     #head-email{
         display: block;
         width: 27rem;
         margin-bottom: 2rem;
-        /* margin-left: 1.5rem; */
     }
     .header-content h1{
         font-size: 2.5rem;
