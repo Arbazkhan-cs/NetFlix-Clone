@@ -30,6 +30,7 @@ header{
     padding: 0 12%;
     z-index: 100;
 }
+
 header .nav{
     display: flex;
     justify-content: space-between;
@@ -298,6 +299,9 @@ hr{
     .main-nav{
         gap:1rem;
     }
+    .main{
+        margin-top: 2rem;
+    }
     #select-lang{
         width: 3rem;
     }
@@ -306,8 +310,9 @@ hr{
         height: 1.2rem;
     }
     .sign-up{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
+
     .main-content h1{
         font-size: 2.5rem;
     }
@@ -340,6 +345,9 @@ hr{
         margin-bottom: 2rem;
     }
 
+    .header{
+        height: 50rem;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -350,7 +358,7 @@ hr{
         display: block;
         width: 27rem;
         margin-bottom: 2rem;
-        margin-left: 1.5rem;
+        /* margin-left: 1.5rem; */
     }
     .header-content h1{
         font-size: 2.5rem;
@@ -364,5 +372,11 @@ hr{
     #head-email2{
         width: 25rem;
         font-size: 1.5rem;
+    }
+    .offline-img img{
+        width: 25rem;
+    }
+    .FAQ{
+        margin-top: 4rem; 
     }
 }
