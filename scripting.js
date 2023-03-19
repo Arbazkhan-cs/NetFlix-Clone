@@ -15,7 +15,14 @@ const show = (id, plus)=>{
         add.style.transform = "rotate(90deg)"
     }
 }
-let email = document.getElementById("head-email");
-email.addEventListener('click', ()=>{
-    let label = document.getElementsByClassName("email-label")[0].innerHTML = "";
-})
+
+if(window.innerWidth <= 960){
+    let nodeA = document.querySelector(".img1");
+    let nodeB = document.querySelector(".content1");
+    nodeA.parentNode.insertBefore(nodeB, nodeA);
+
+    nodeA = document.querySelector(".img2");
+    nodeB = document.querySelector(".content2");
+    nodeA.parentNode.insertBefore(nodeB, nodeA);
+}
+
