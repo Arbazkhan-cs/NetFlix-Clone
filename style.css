@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    /* outline: none; */
     text-decoration: none;
     border: none;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-family: "Netflix sans light";    
     box-sizing: border-box;
 }
 
@@ -20,7 +21,7 @@ body{
 .header{
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.931) 0, rgba(0, 0, 0, 0.759) 60%, rgba(0, 0, 0, 0.8) 100%),url("bg2.jpg");
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.931) 0, rgba(0, 0, 0, 0.604) 60%, rgba(0, 0, 0, 0.638) 100%),url("netflix_image.png");
     background-size: cover;
 }
 
@@ -39,31 +40,40 @@ header .nav{
 .nav-logo img{
     width: 15rem;
     height: 8rem;
-    background-color: rgba(0, 0, 0, 0.751);
-    box-shadow: 0 0 50px 30px black;
-    border-radius: 50%;
+    /* background-color: rgba(0, 0, 0, 0.751); */
+    /* box-shadow: 0 0 50px 30px black; */
+    /* border-radius: 50%; */
     cursor: pointer;
 }
 
 .lang{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.655);
 }
-.lang img{
+#select-img{
     position: absolute;
     height: 1.6rem;
-    top: 25%;
-    left: 8%;
+    left: 1rem;
+}
+#drop-down{
+    position: absolute;
+    height: 1rem;
+    right: 1rem;
 }
 #select-lang{
-    font-size: 1.5rem;
-    padding: 6% 20%;
-    padding-left: 40%;
-    background: none;
     border: 0.5px solid rgb(127, 126, 126);
+    width: 12rem;
+    height: 3rem;
+    z-index: 100;
+    font-size: 1.5rem;
+    background: none;
     color: white;
     border-radius: 5px;
     text-align: center;
-    font-weight: 600;
+    appearance: none;
 }
 #select-lang option{
     color: black;
@@ -72,10 +82,11 @@ header .nav{
 .main-nav{
     display: flex;
     align-items: center;
-    gap: 7rem;
+    gap: 3rem;
 }
 
 .sign-up{
+    font-family: "Netflix sans";
     font-size: 1.3rem;
     padding: 3% 8%;
     font-weight: bolder;
@@ -83,6 +94,9 @@ header .nav{
     color: white;
     border-radius: 5px;
     transition: 0.5s;
+}
+.sign-up a{
+    color: white;
 }
 .sign-up:hover{
     background-color: #b31018;
@@ -96,7 +110,7 @@ header .nav{
 .header-content h1{
     color: white;
     font-size: 4.7rem;
-    font-weight: 700;
+    font-family: "Netflix sans";
 }
 .header-content p{
     position: relative;
@@ -147,6 +161,9 @@ header .nav{
 .main-content{
     margin: 15rem 0;
     font-size: 2.5rem;
+}
+.main-content h1{
+    font-family: "Netflix sans";
 }
 .main-content p{
     margin-top: 2rem;
@@ -253,7 +270,7 @@ hr{
         padding: 0 5%;
     }
     .header{
-        height: 70vh;
+        height: 80vh;
     }
     .header-content{
         margin-top: 10rem;
@@ -291,6 +308,9 @@ hr{
     }
 }
 @media screen and (max-width: 600px){
+    .header{
+        padding-top: 1rem;
+    }
     .nav-logo img{
         width: 10rem;
         height: 5rem;
@@ -302,14 +322,18 @@ hr{
         margin-top: 2rem;
     }
     #select-lang{
-        width: 3rem;
+        content: none;
+        width: 5rem;
     }
-    .lang img{
-        width: 1.2rem;
-        height: 1.2rem;
+    #select-img{
+        height:1.4rem;
+    }
+    #drop-down{
+        height: 1rem;
     }
     .sign-up{
-        font-size: 1.5rem;
+        vertical-align: center;
+        padding: 0.5rem 1rem 0.5rem;
     }
 
     .main-content h1{
@@ -367,7 +391,7 @@ hr{
     .header-content p{
         font-size: 2rem;
     }
-    .Questions div button{
+    .Questions div button,.Questions div p{
         font-size: 1.5rem;
     }
     #head-email2{
