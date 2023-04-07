@@ -40,9 +40,6 @@ header .nav{
 .nav-logo img{
     width: 15rem;
     height: 8rem;
-    /* background-color: rgba(0, 0, 0, 0.751); */
-    /* box-shadow: 0 0 50px 30px black; */
-    /* border-radius: 50%; */
     cursor: pointer;
 }
 
@@ -270,7 +267,7 @@ hr{
         padding: 0 5%;
     }
     .header{
-        height: 80vh;
+        height: 55rem;
     }
     .header-content{
         margin-top: 10rem;
@@ -285,7 +282,7 @@ hr{
         padding: 0 3rem;
     }
     .header-content h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .header-content p{
         font-size: 2rem;
